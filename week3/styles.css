@@ -1,0 +1,33 @@
+.mainHead {
+    color: darkgreen;
+}
+
+h1, h2 {
+    font-family: Georgia;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+}
+
+div > a {
+    text-decoration: none; 
+}
+
+#linkTitle {
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    float: left;
+    padding: 25px 25px 25px 50px
+}
+
