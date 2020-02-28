@@ -1,0 +1,22 @@
+* {
+    background-color: lightgrey;
+    font-family: 'Simonetta';
+}
+
+
+.mainHeader {
+    color: #A994FF;
+}
+
+table, th, td, tr {
+    border: 3px solid black;
+}
+
+.smallText {
+    font-size: 7px;
+    color: red;
+}
+
+.kelBlue {
+    color: blue;
+}
