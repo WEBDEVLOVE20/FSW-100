@@ -1,0 +1,90 @@
+#page1{
+    text-align: center;
+    background-color: lightslategray;
+}
+
+
+.wraptext {
+    float: left;
+    margin-left: 300px;
+    padding: 25px 30px 25px 25px;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 99%;
+    height: 25px;
+    background-color: black;
+}
+
+
+.headername {
+    padding-top: 20px;
+}
+
+
+.adjusttext {
+    margin-top: 40px;
+    margin-right: 300px;
+    margin-left: 300px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* Grid */
+
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 180px 180px 180px 180px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: 100%;
+
+}
+
+.lightpinkbox {
+    background-color: #F5c6D6;
+    grid-column: 1/5;
+}
+
+.hotpinkbox1 {
+    background-color: #EE2E84;
+}
+
+.hotpinkbox2 {
+    background-color: #EE2E84; 
+}
+
+.hotpinkbox3 {
+    background-color: #EE2E84;
+}
+
+.hotpinkbox4 {
+    background-color: #EE2E84;
+}
+
+.bluebox1 {
+    background-color: #85CFD8;
+    grid-column: 1/3;
+}
+
+.bluebox2 {
+    background-color: #85CFD8;
+    grid-column: 3/5;
+}
+
+.greenbox {
+    background-color: #8DC63F;
+    grid-column: 1/4;
+}
+
+.orangebox {
+    background-color: #E76E34;
+}
+
