@@ -1,0 +1,85 @@
+* {
+    margin-top: 5px;
+    padding: 0;
+}
+
+#flex-container {
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    color: grey;
+}
+
+#flex-container > div:nth-child(1) {
+    background-color: #A8E2FF;
+    height: 55em;
+    width: 16%;
+}
+
+#flex-container > div:nth-child(1):hover {
+    transition: background-color 1s;
+    background-color: #801C6C;
+}
+
+#flex-container > div:nth-child(2) {
+    background-color: #E5D1FF;
+    width: 16%;
+}
+
+#flex-container > div:nth-child(2):hover {
+    transition: background-color 2s linear;
+    background-color: #CCB756;
+    width: 50%; 
+}
+
+#flex-container > div:nth-child(3) {
+    background-color: #D1EFFF;
+    width: 16%;
+}
+
+#flex-container > div:nth-child(3):hover {
+    transition: background-color 2s ease-in;
+    background-color: #CC41B0;
+    border-radius: 10em;
+}
+
+#flex-container > div:nth-child(4) {
+    background-color: #C5BEE8;
+    width: 16%;
+}
+
+#flex-container > div:nth-child(4):hover {
+    transition: background-color 2s ease-out;
+    background-color:#2DCCC6; 
+    height: 25em;
+    box-shadow: 20px 20px black;
+}
+
+#flex-container > div:nth-child(5) {
+    background-color: #F1E2FF;
+    width: 16%;
+}
+
+#flex-container > div:nth-child(5):hover {
+    transition: background-color 1s ease-in-out;
+    background-color: #22807C;
+    border-style: dotted;
+    border-color: crimson;
+    border-width: 20px;
+}
+
+#flex-container > div:nth-child(6) {
+    background-color: #D6FFE3;
+    width: 16%;
+}
+
+#flex-container > div:nth-child(6):hover {
+    transition: background-color 1s ease-in-out;
+    background-color: #9D807C;
+    border-color: cyan;
+    border-style: solid;
+    border-width: 10px;
+    opacity: 38%;
+}
