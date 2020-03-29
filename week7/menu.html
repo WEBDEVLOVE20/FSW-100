@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+      <a href="./index.html">HOME</a>
+      <a href="./menu.html">MENU</a>
+      <a href="./where.html">WHERE</a>
+    </nav>
+    <div class="container" id="menu">
+      <h5 class="themenu">
+          <span>THE MENU</span>
+      </h5>
+    <div class="eatdrink">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+    <div class="tablink">Food</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');" id="myLink">
+    <div class="tablink">Drink</div>
+      </a>
+    </div>
+    <div id="Eat" class="container menu">
+      <h5>Muffin</h5>
+        <p class="textcolor">Any flavor muffin $3.50</p><br>
+      <h5>Croissant</h5>
+        <p class="textcolor">Flaky chocolate or plain $4.00</p><br>
+      <h5>Danish Pastry</h5>
+        <p class="textcolor">Filled with cream cheese or strawberries $4.00</p><br>
+      <h5>Scrambled eggs</h5>
+        <p class="textcolor">Scrambled eggs, roasted red pepper and garlic, with green onions $7.50</p><br>
+      <h5>Bowl of Fruit</h5>
+        <p class="textcolor">Strawberry, Blackberry, Blueberry and Banana $6.50</p>
+    </div>
+    <div id="Drinks" class="container menu">
+      <h5>Hot Coffee</h5>
+        <p class="textcolor">Any flavor, includes cream & sugar $2.50</p><br>
+      <h5>Espresso</h5>
+        <p class="textcolor">One shot hot or iced $3.00</p><br>
+      <h5>Iced Coffee</h5>
+        <p class="textcolor">Cold brewed coffee, includes cream & sugar $5.00</p><br>
+      <h5>Latte</h5>
+        <p class="textcolor">Frothy milk mixed with cream and espresso $4.50</p><br>
+      <h5>Fruit Smothie</h5>
+        <p class="textcolor">Can mix or match any fruit or vegtables $5.50</p>
+    </div>  
+    </div>
+    </div>
+    <script>
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+</body>
+</html>
